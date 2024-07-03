@@ -1,0 +1,64 @@
+/*common project styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*common selector styles*/
+.nav-item, .footer-info__github-link {
+  text-decoration: none;
+  color: black;
+}
+
+.header, .footer {
+  margin: 0 auto;
+  width: 1220px;
+  background-color: rgba(252, 205, 152, 0.5);
+  border: 1px solid red;
+}
+
+/*header*/
+.header-nav__items {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  padding: 10px 50px;
+  list-style: none;
+}
+
+/*main*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+
+
+/*footer*/
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px 50px;
+}
+
+.footer-info__github-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer-info__github-logo {
+  width: 30px;
+}
+
+.footer-info__rsschool-logo {
+  width: 100px;
+}
