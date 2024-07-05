@@ -1,5 +1,5 @@
 /*common project styles*/
-* {
+*{
   margin: 0;
   padding: 0;
 }
@@ -14,11 +14,31 @@ body {
   color: black;
 }
 
-.header, .footer {
+.header, .main, .footer {
   margin: 0 auto;
   width: 1220px;
   background-color: rgba(252, 205, 152, 0.5);
   border: 1px solid red;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.column-positioning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.font {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.markers {
+  list-style: none;
 }
 
 /*header*/
@@ -27,15 +47,93 @@ body {
   justify-content: end;
   gap: 30px;
   padding: 10px 50px;
-  list-style: none;
 }
 
 /*main*/
 .main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
 }
 
+.left-section {
+  gap: 50px;
+  padding: 20px 20px 60px 20px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.left-section__profile-photo {
+  width: 60%;
+  margin-bottom: 30px;
+  border-radius: 100%;
+  border: 10px solid white;
+}
+
+.left-section__profile-title {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+.border {
+  border-bottom: 2px solid black;
+  width: 18rem;
+  margin-bottom: 30px;
+}
+
+.border-dist-bottom {
+  margin-bottom: 10px;
+}
+
+.left-section__contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+}
+
+.left-section__contact-telegram, .left-section__contact-mail, .left-section__contact-discord {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.telegram-logo, .mail-logo, .discord-logo {
+  width: 22px;
+}
+
+/*right-section*/
+.right-section {
+  gap: 50px;
+  padding: 60px;
+}
+
+.right-section__education-list, .right-section__experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-section__experience-info {
+  align-self: flex-start;
+}
+
+.experience-item{
+  color: black;
+}
+
+.right-section__experience-list {
+  margin-left: 20px;
+}
+
+.right-section__experience-tech {
+  margin-left: 50px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 
 
