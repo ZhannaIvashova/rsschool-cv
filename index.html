@@ -7,24 +7,26 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header shadow">
     <nav class="header-nav">
       <ul class="header-nav__items markers">
-        <li><a class="nav-item" href="#">About me</a></li>
-        <li><a class="nav-item" href="#">Skills</a></li>
-        <li><a class="nav-item" href="#">Contacts</a></li>
+        <li><a class="nav-item" href="#about-me">About me</a></li>
+        <li><a class="nav-item" href="#education">Education</a></li>
+        <li><a class="nav-item" href="#work-experience">Work Experience</a></li>
+        <li><a class="nav-item" href="#skill">Skills</a></li>
+        <li><a class="nav-item" href="#contact">Contacts</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main shadow">
     <div class="left-section column-positioning">
       <section class="left-section__profile column-positioning">
-        <img class="left-section__profile-photo" src="./assets/images/me-1.jpg" alt="my-photo">
+        <img class="left-section__profile-photo" src="./assets/images/me.jpg" alt="my-photo">
         <h1 class="left-section__profile-title">Zhanna Ivashova</h1>
         <div class="border border-dist-bottom"></div>
         <span class="left-section__profile-occupation uppercase">junior frontend developer</span>
       </section>
-      <section class="left-section__contact column-positioning">
+      <section class="left-section__contact column-positioning" id="contact">
         <h2 class="left-section__contact-title uppercase">Contacts</h2>
         <div class="border"></div>
         <div class="left-section__contact-list">
@@ -42,23 +44,7 @@
           </div>
         </div>
       </section>
-      <section class="right-section__education column-positioning">
-        <h2 class="right-section__education-title uppercase">Education</h2>
-        <div class="border"></div>
-        <ul class="right-section__education-list markers">
-          <li><span class="font">Pacific State University</span><br>
-            Industrial and Civil Construction<br>
-            Project Engineer<br>
-            2008-2013</li>
-          <li><span class="font">Yandex Practicum. Training Course</span><br>
-            Python developer plus<br>
-            2023-2024</li>
-          <li><span class="font">ItGirlSchool. Training Course</span><br>
-            Frontend developer<br>
-            2024- to present</li>
-        </ul>
-      </section>
-      <section class="left-section__skill column-positioning">
+      <section class="left-section__skill column-positioning" id="skill">
         <h2 class="left-section__skill-title uppercase">Skills</h2>
         <div class="border"></div>
         <ul>
@@ -81,73 +67,77 @@
     </div>
 
     <div class="right-section column-positioning">
-      <section class="right-section__aboutme column-positioning">
+      <section class="right-section__aboutme column-positioning" id="about-me">
         <h2 class="right-section__aboutme-title uppercase">About me</h2>
         <div class="border"></div>
-        <p>My goal is to continuously learn and develop in order to become a successful specialist in the future. My strengths include perseverance and diligence. I greatly enjoy the process of creating projects, where a functional product emerges from nothingness and can be used by people.
-        <br>
-        <br>
-        I have experience working on several projects, gained during my programming courses. Currently, I am working on a project related to movies. I strive for constant self-improvement and am always eager to learn new things to enhance my skills and create even more high-quality and interesting projects.</p>
+        <p>My goal is to continuously learn and develop in order to become a successful specialist in the future. My strengths include perseverance and diligence. I greatly enjoy the process of creating projects, where a functional product emerges from nothingness and can be used by people. <br>
+        I have experience working on several projects, gained during my programming courses. Currently, I'm working on a project related to movies. I strive for new knowledge to improve my skills and create better and more interesting projects.</p>
       </section>
-      
-      <!--<section class="right-section__education column-positioning">
+      <section class="right-section__education column-positioning" id="education">
         <h2 class="right-section__education-title uppercase">Education</h2>
         <div class="border"></div>
         <ul class="right-section__education-list markers">
-          <li><span class="font">Pacific State University</span><br>
-            Industrial and Civil Construction. Project Engineer<br>
+          <li><span class="font">Pacific State University.</span>
+            Industrial and Civil Construction. Project Engineer.
             2008-2013</li>
-          <li><span class="font">Yandex Practicum. Training Course</span><br>
-            Python developer plus<br>
+          <li><span class="font">Yandex Practicum. Training Course.</span>
+            Python developer plus.
             2023-2024</li>
-          <li><span class="font">ItGirlSchool. Training Course</span><br>
-            Frontend developer<br>
+          <li><span class="font">ItGirlSchool. Training Course.</span>
+            Frontend developer.
             2024- to present</li>
         </ul>
-      </section>-->
-      <section class="right-section__experience column-positioning">
+      </section>
+      <section class="right-section__experience column-positioning" id="work-experience">
         <h2 class="right-section__experience-title uppercase">Work Experience</h2>
         <div class="border"></div>
         <div class="right-section__experience-info">
-          <p>As part of my educational process, I have been creating projects in JS and Python. Currently, I am working on my movie project.</p><br>
+          <p>As part of my educational process, I created projects in JS and Python. Currently, I'm working on my movie project. Here are some of them:</p>
           <ul class="right-section__experience-list">
             <li>
-              <a class="experience-item" href="https://zhannaivashova.github.io/book-bazaar/" target="_blank"><span class="font">A project with the ability to select a book by the author's name and add it to the cart</span></a><br>
-              In development<br>
-              Technologies:
-                <ul class="right-section__experience-tech">
-                  <li>Java Script</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>SASS</li>
-                </ul>
+              <span class="font">A project with the ability to select a book by the author's name and add it to the basket.</span><br>
+              Technologies: JS, HTML5, CSS3, SASS. In development.
+              <ul class="right-section__experience-link markers">
+                <li>
+                  <a class="experience-item" href="https://github.com/ZhannaIvashova/book-bazaar" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="experience-item" href="https://zhannaivashova.github.io/book-bazaar/" target="_blank">GitHub Pages</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="experience-item" href="https://zhannaivashova.github.io/superheroes/" target="_blank"><span class="font">A gallery page where you can view information about superheroes and rate them</span></a><br>
-              Technologies:
-                <ul class="right-section__experience-tech">
-                  <li>Java Script</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                </ul>
+              <span class="font">A gallery page where you can view information about superheroes and rate them.</span><br>
+              Technologies: JS, HTML5, CSS3.
+              <ul class="right-section__experience-link markers">
+                <li>
+                  <a class="experience-item" href="https://github.com/ZhannaIvashova/superheroes" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="experience-item" href="https://zhannaivashova.github.io/superheroes/" target="_blank">GitHub Pages</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="experience-item" href="https://zhannaivashova.github.io/car-cost-calculator/" target="_blank"><span class="font">Car cost calculator based on configuration</span></a><br>
-              Technologies:
-                <ul class="right-section__experience-tech">
-                  <li>Java Script</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                </ul>
+              <span class="font">Car cost calculator based on configuration.</span><br>
+              Technologies: JS, HTML5, CSS3.
+              <ul class="right-section__experience-link markers">
+                <li>
+                  <a class="experience-item" href="https://github.com/ZhannaIvashova/car-cost-calculator" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="experience-item" href="https://zhannaivashova.github.io/car-cost-calculator/" target="_blank">GitHub Pages</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a class="experience-item" href="https://github.com/ZhannaIvashova/Movie" target="_blank"><span class="font">Random selection of movies from a third-party API and populating a local database</span></a><br>
-              In development, реализована только backend часть<br>
-              Technologies:
-                <ul class="right-section__experience-tech">
-                  <li>Python</li>
-                  <li>FastApi</li>
-                </ul>
+              <span class="font">Random selection of movies from a third-party API and populating a local database.</span><br>
+              Technologies: Python, FastApi. In development. Only the backend part is implemented.
+              <ul class="right-section__experience-link markers">
+                <li>
+                  <a class="experience-item" href="https://github.com/ZhannaIvashova/Movie" target="_blank">GitHub</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -171,7 +161,7 @@
       
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer shadow">
     <div class="footer-info">
       <a class="footer-info__github-link" href="https://github.com/ZhannaIvashova">
         <img class="footer-info__github-logo" src="./assets/images/github-logo.svg" alt="github-logo">
@@ -181,6 +171,5 @@
       <a class="footer-info__rsschool-link" href="https://rs.school/courses/javascript-ru"><img class="footer-info__rsschool-logo"  src="./assets/images/rsschool-logo.svg" alt="rsschool-logo"></a>
     </div>
   </footer>
-  
 </body>
 </html>

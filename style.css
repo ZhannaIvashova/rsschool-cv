@@ -6,19 +6,21 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefcfc;
 }
 
 /*common selector styles*/
-.nav-item, .footer-info__github-link {
-  text-decoration: none;
+.nav-item, .experience-item, .footer-info__github-link{
   color: black;
 }
 
 .header, .main, .footer {
   margin: 0 auto;
   width: 1220px;
-  background-color: rgba(252, 205, 152, 0.5);
-  border: 1px solid red;
+}
+
+.header, .footer {
+  background-color: #edebeb;
 }
 
 .uppercase {
@@ -29,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
 .font {
@@ -41,12 +42,16 @@ body {
   list-style: none;
 }
 
+.shadow {
+  box-shadow: 0px 0px 50px #ccc;
+}
+
 /*header*/
 .header-nav__items {
   display: flex;
   justify-content: end;
-  gap: 30px;
-  padding: 10px 50px;
+  gap: 60px;
+  padding: 20px 50px;
 }
 
 /*main*/
@@ -57,15 +62,15 @@ body {
 
 .left-section {
   gap: 50px;
-  padding: 20px 20px 60px 20px;
-  border: 1px solid rgb(0, 0, 0);
+  padding: 40px 20px 60px 20px;
+  background-color: #ccc;
 }
 
 .left-section__profile-photo {
-  width: 60%;
+  width: 65%;
   margin-bottom: 30px;
   border-radius: 100%;
-  border: 10px solid white;
+  border: 10px solid #dcdcdc;
 }
 
 .left-section__profile-title {
@@ -103,29 +108,23 @@ body {
 /*right-section*/
 .right-section {
   gap: 50px;
-  padding: 60px;
+  padding: 100px 60px 60px 60px;
+  background-color: white;
 }
 
-.right-section__education-list, .right-section__experience-list {
+.right-section__education-list, .right-section__experience-info, .right-section__experience-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.right-section__experience-info {
-  align-self: flex-start;
-}
-
-.experience-item{
-  color: black;
 }
 
 .right-section__experience-list {
   margin-left: 20px;
 }
 
-.right-section__experience-tech {
-  margin-left: 50px;
+.right-section__experience-link {
+  display: flex;
+  gap: 24px;
 }
 
 pre {
@@ -134,8 +133,6 @@ pre {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
-
 
 /*footer*/
 .footer-info {
@@ -151,6 +148,7 @@ pre {
   flex-direction: column;
   align-items: center;
   gap: 3px;
+  text-decoration: none;
 }
 
 .footer-info__github-logo {
