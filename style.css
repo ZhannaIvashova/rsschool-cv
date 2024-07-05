@@ -49,8 +49,7 @@ body {
 /*header*/
 .header-nav__items {
   display: flex;
-  justify-content: end;
-  gap: 60px;
+  justify-content: space-around;
   padding: 20px 50px;
 }
 
