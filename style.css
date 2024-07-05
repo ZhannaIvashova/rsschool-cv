@@ -92,13 +92,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 6px;
+  gap: 10px;
 }
 
-.left-section__contact-telegram, .left-section__contact-mail, .left-section__contact-discord {
+.contact-item {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 16px;
 }
 
 .telegram-logo, .mail-logo, .discord-logo {
