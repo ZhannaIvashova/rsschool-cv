@@ -1,0 +1,159 @@
+/*common project styles*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefcfc;
+}
+
+/*common selector styles*/
+.nav-item, .experience-item, .footer-info__github-link{
+  color: black;
+}
+
+.header, .main, .footer {
+  margin: 0 auto;
+  width: 1220px;
+}
+
+.header, .footer {
+  background-color: #edebeb;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.column-positioning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.markers {
+  list-style: none;
+}
+
+.shadow {
+  box-shadow: 0px 0px 50px #ccc;
+}
+
+/*header*/
+.header-nav__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+
+/*main*/
+.main {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+}
+
+.left-section {
+  gap: 50px;
+  padding: 40px 20px 60px 20px;
+  background-color: #ccc;
+}
+
+.left-section__profile-photo {
+  width: 65%;
+  margin-bottom: 30px;
+  border-radius: 100%;
+  border: 10px solid #dcdcdc;
+}
+
+.left-section__profile-title {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+.border {
+  border-bottom: 2px solid black;
+  width: 18rem;
+  margin-bottom: 30px;
+}
+
+.border-dist-bottom {
+  margin-bottom: 10px;
+}
+
+.left-section__contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.telegram-logo, .mail-logo, .discord-logo {
+  width: 22px;
+}
+
+/*right-section*/
+.right-section {
+  gap: 50px;
+  padding: 100px 60px 60px 60px;
+  background-color: white;
+}
+
+.right-section__education-list, .right-section__experience-info, .right-section__experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-section__experience-list {
+  margin-left: 20px;
+}
+
+.right-section__experience-link {
+  display: flex;
+  gap: 24px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*footer*/
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px 50px;
+}
+
+.footer-info__github-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+}
+
+.footer-info__github-logo {
+  width: 30px;
+}
+
+.footer-info__rsschool-logo {
+  width: 100px;
+}
